@@ -35,7 +35,7 @@ bot = telebot.TeleBot(TOKEN)
 def upper(message:Message):
     bot.reply_to(message, message.text.upper())
 
-# bot.polling()
+bot.polling()
 
 SEARCHCARD = 'Fanat Fire'.replace(' ','+')
 SEARCHCARD = input('what card? ').replace(' ','+')
